@@ -37,7 +37,7 @@ body {
     max-width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-    border-bottom: 1px solid #E7E9FC;
+    border-bottom: 1px solid var(--accent);
 }
 .navigation {
     display: flex;
@@ -271,6 +271,9 @@ body {
 .card .item:nth-child(3n) {
     margin-right: 0;
 }
+.card .item:nth-child(-n+6) {
+    margin-bottom: 48px;
+}
 .card-item {
     font-weight: 500;
     font-size: 20px;
@@ -289,4 +292,9 @@ body {
     margin-top: 0;
     margin-bottom: 32px;
     color: var(--text);
+}
+.card-text {
+    border-right: 1px solid var(--accent);
+    border-left: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent);
 }
